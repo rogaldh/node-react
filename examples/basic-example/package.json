@@ -1,0 +1,27 @@
+{
+  "name": "basic-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.jsx",
+  "dependencies": {
+    "body-parser": "^1.12.0",
+    "express": "^4.12.2",
+    "forever": "^0.14.1",
+    "forever-monitor": "^1.5.2",
+    "node-jsx": "^0.12.4",
+    "path": "^0.11.14",
+    "react": "^0.13.0"
+  },
+  "devDependencies": {
+    "babel-core": "^4.7.12",
+    "babel-loader": "^4.2.0",
+    "webpack": "^1.7.3"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "clear && npm run build && node ./server/server.js",
+    "start": "clear && npm run build && forever start ./server/server.js"
+  },
+  "author": "proxyfabio",
+  "license": "MIT"
+}
